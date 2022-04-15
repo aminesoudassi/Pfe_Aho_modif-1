@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/A2.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Start NavBar -->
+   <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">LOGO</a>
+      <input type="checkbox" id="toggler">
+      <!-- <label for="toggler"> <i class="fa-brands fa-angular"></i></label> -->
+      <label for="toggler"><span></span></label>
+      <div class="menu">
+          <ul class="list">
+            <li><a href="https://www.youtube.com/watch?v=ePrUyy20Fuo">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"id="open-modal-id-SignIn" class="show-modal-SignIn">Sign in</a></li>
+            <li><a href="#" id="show-modal-id" class="show-modal" >Sign Up</a></li>
+          </ul>
+      </div>
+    </div>
+   </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Section of Signing In and Signing Up -->
+        <!-- Show Modal Of Signing Up -->
+        <!-- <button class="show-modal" id="show-modal-id">Show modal 1</button> -->
+        <div class="modal hidden" id="test">
+          <button class="close-modal" id="close-modal-id">&times</button>
+
+          <div class="modale-container">
+              <div class="img"></div>
+              <h1>Sign up</h1>
+              <hr>
+              <p>Discover a new way of traveling with HomeExchange: Be welcomed all over the world and save money!</p>
+              <a href="#" id="open-modal-id-SignUp" class="btn btn-1"><p>Sign up with your email address</p></a>
+              <a href="#" class="btn btn-2"><p>Sign up with your email address</p></a>
+              <a href="#" class="btn btn-3"><p>Sign up with your email address</p></a>
+              <p class="para-for-sign-in">Already have an account?<a href="#">Sign in</a></p>
+              <hr>
+              <p class="para-for-General-Terms">By creating an account, I accept the <a href="#">General Terms of Use</a></p>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <!-- End Section That Showing Modal Of Signing Up -->
+
+        <!-- Start Sign Up -->
+        <div class="modal hidden" id="test1">
+          <button class="close-modal" id="close-modal-id-SignUp">&times</button>
+          <button class="returnToSignUp" id="return-SignUp-id">&lt;</button>
+          <div class="modale-container">
+              <!-- <div class="img"></div> -->
+              <h1>Sign Up</h1>
+              <hr>              
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <!-- End Sign Up -->
+        <!-- Start Sign In -->
+        <div class="modal hidden" id="test2">
+          <button class="close-modal" id="close-modal-id-SignIn">&times</button>
+          <div class="modale-container">
+            <h1>Sign In</h1>
+              <hr><br>
+            <a href="#" class="btn btn-2"><p>Sign in with Facebook</p></a>
+            <a href="#" class="btn btn-3"><p>Sign in with Appel</p></a>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+        <!-- End Sign In -->
+    <!-- End Section of Signing In and Signing Up -->
+    <!-- Start Landing Section -->
+      
+    <!-- End Landing Section -->
+    <script src="/js/A2.js"></script>
+  </body>
+</html>

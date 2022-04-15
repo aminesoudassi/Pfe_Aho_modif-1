@@ -1,0 +1,209 @@
+
+.show-modal {
+  /* font-size: 20px; */
+  /* font-weight: 600; */
+  padding: 10px 30px;
+  border: none;
+  background-color: #fff;
+  border-radius:100px;
+  cursor: pointer;
+}
+.show-modal-SignIn {
+  /* font-weight: 600; */
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(207, 159, 15);
+  border-radius:100px;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  color: rgb(174, 170, 170);
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 30px;
+}
+.close-modal:hover {
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* -------------------------- */
+/* START CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 440px; 
+  height: 680px;
+  background-color: white;
+  padding: 80px 50px ;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(142, 140, 140, 0.5);
+  backdrop-filter: blur(0.2px);
+  z-index: 5;
+}
+
+/* END CLASSES TO MAKE MODAL WORK */
+/* -------------------------- */
+
+
+
+.modal .modal-container .img,p,h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+.modal  p {
+  font-size: 16px;
+}
+.modal .img {
+  width: 100%;
+  height: 150px;
+  margin-top: -30px;
+  background-color: rgb(184, 5, 5);
+}
+.modal .btn{
+  width: 100%;
+  height: 60px;
+  color: white;
+  text-decoration: none;
+}
+.modal .btn p {
+  padding: 10px 16px;
+}
+.modal .btn-1 p{
+  margin-top: 20px;
+  background-color: #f7a800 ;
+  
+}
+.modal .btn-2 p{
+  background-color: #3b5998 ;
+}
+.modal .btn-3 p{
+  background-color: #000 ;
+}
+.modal .para-for-sign-in a,
+.modal .para-for-General-Terms a {
+  color: #f7a800;
+  text-decoration: none;
+}
+.modal .para-for-sign-in {
+  margin: 20px 0;
+}
+.modal .para-for-General-Terms {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.modal hr {
+  margin: 10px 0;
+}
+.returnToSignUp {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  font-size: 5rem;
+  color: rgb(174, 170, 170);
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+
+/* @media screen and (max-width: 1024px){
+  .modal {
+    width: 340px;
+    height: 600px; 
+    padding: 50px 30px 0;
+    margin-top: 10px;
+  }
+  .close-modal {
+    top: 10px;
+    right: 8px;
+  }
+  .modal .para-for-sign-in {
+    margin: 10px;
+  }
+  .modal .para-for-General-Terms {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+} */
+@media screen and (max-width: 600px){
+  .show-modal,.show-modal-SignIn {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 450px){
+  .modal {
+    width: 340px;
+    height: 640px; 
+    padding: 50px 30px 10px;
+    margin-top: 20px;
+  }
+  .close-modal {
+    top: 10px;
+    right: 8px;
+  }
+
+}
+
+@media screen and (max-width: 324px){
+  .modal {
+    width: 300px;
+    height: 540px; 
+    padding: 50px 30px 10px;
+    margin-top: 10px;
+  }
+  .modal p {
+    font-size: 14px;
+  }
+  .modal h1 {
+    margin: 5px 0;
+  }
+  .close-modal {
+    top: 10px;
+    right: 8px;
+  }
+  .modal hr {
+    margin: 5px 0;
+  }
+  .modal .para-for-sign-in {
+    margin: 5px;
+  }
+  .modal .para-for-General-Terms {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .modale-container .img {
+    height: 120px;
+  }
+
+}
